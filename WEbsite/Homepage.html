@@ -1,0 +1,73 @@
+ <html>
+<head>
+  <title> Tasty Cakes </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <script src="./Actions.js"></script>
+</head>   
+<body>
+    <p> <span> Our </span> Store </p>
+    <div id = "ButtonsNav">
+        <div id = "VarietyButtons">
+            <button>
+                ALL
+            </button> 
+            <button id = "CakeHere" onclick="DisplayCurrent(id)">
+                CAKES
+            </button> 
+            <button id = "CupCakeHere" onclick="DisplayCurrent(id)">
+                CUPCAKES
+            </button> 
+            <button id = "SweetsHere" onclick="DisplayCurrent(id)">
+                SWEETS
+            </button> 
+            <button id = "BoughnutHere" onclick="DisplayCurrent(id)">
+                DOUGHNUTS
+            </button> 
+        </div>
+    </div>
+    <form action="" name = "SearchBarInput" id = "SearchBar">
+        <input type="text" name = "SearchValue" id = "myInput" placeholder = "Eg. Cheese Cake" onkeyup="SearchResult()">
+    </form>
+<div id = "ResultArea" class="container">
+      
+  <div class="row">
+      <div class="col-sm-4">
+          <img src = "./images/Sweets-2.jpg" class = "imgg"/>
+      </div>
+      <div class="col-sm-4">
+            <img src = "./images/CupCakes.jpg"  class = "imgg"/>
+      </div>
+      <div class="col-sm-4">
+            <img src = "./images/Sweets.webp" class = "imgg"/>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-4">
+          <img src = "./images/Cake-2.jpg"  class = "imgg"/>
+      </div>
+      <div class="col-sm-4">
+            <img src = "./images/CupCakes-2.jpg"  class = "imgg"/>
+      </div>
+      <div class="col-sm-4">
+            <img src = "./images/Cake.jpg"  class = "imgg"/>
+      </div>
+  </div>
+    <div class="row">
+          <div class="col-sm-4">
+              <img src = "./images/Doughnuts.jpg"  class = "imgg"/>
+          </div>
+          <div class="col-sm-4">
+                <img src = "./images/Doughnuts-2.jfif"  class = "imgg"/>
+          </div>
+          <div class="col-sm-4">
+                <img src = "./images/Doughnuts-3.jfif" class = "imgg"/> 
+          </div>
+    </div>
+</div>
+</body>
+</html>
